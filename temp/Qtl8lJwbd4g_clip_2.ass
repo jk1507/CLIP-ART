@@ -1,0 +1,35 @@
+[Script Info]
+Title: ClipEngine Dynamic Subtitles
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: ViralDefault,Arial,72,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,2,0,1,6,3,2,60,60,420,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.84,ViralDefault,,0,0,0,,{\k40}100K {\k20}ON {\k10}THEM {\k14}RIGHT
+Dialogue: 0,0:00:00.84,0:00:02.58,ViralDefault,,0,0,0,,{\k22}HERE. {\k30}OH {\k32}YEAH! {\k14}OH
+Dialogue: 0,0:00:02.58,0:00:04.55,ViralDefault,,0,0,0,,{\k32}MY {\k22}GOSH! {\k40}AND {\k10}THEY
+Dialogue: 0,0:00:04.55,0:00:05.33,ViralDefault,,0,0,0,,{\k28}SOMEHOW {\k22}FOUND {\k20}ME. {\k6}I
+Dialogue: 0,0:00:05.33,0:00:06.37,ViralDefault,,0,0,0,,{\k10}DON'T {\k10}KNOW {\k20}HOW. {\k38}BUT
+Dialogue: 0,0:00:06.37,0:00:08.39,ViralDefault,,0,0,0,,{\k26}PLEASE, {\k8}JUST {\k26}RUN! {\k40}FIND
+Dialogue: 0,0:00:08.39,0:00:09.21,ViralDefault,,0,0,0,,{\k14}THE {\k22}BEST {\k20}HIDING {\k26}SPOT.
+Dialogue: 0,0:00:10.35,0:00:11.29,ViralDefault,,0,0,0,,{\k10}SHOULDN'T {\k12}BE {\k52}APOLOGIZING {\k20}TO
+Dialogue: 0,0:00:11.29,0:00:12.41,ViralDefault,,0,0,0,,{\k30}US. {\k16}YOU {\k8}SHOULD {\k8}BE
+Dialogue: 0,0:00:12.41,0:00:13.33,ViralDefault,,0,0,0,,{\k52}APOLOGIZING {\k14}TO {\k8}YOUR {\k18}MOM.
+Dialogue: 0,0:00:13.69,0:00:14.61,ViralDefault,,0,0,0,,{\k40}SHE'S {\k24}WATCHING {\k14}THIS {\k14}RIGHT
+Dialogue: 0,0:00:14.61,0:00:15.77,ViralDefault,,0,0,0,,{\k20}NOW. {\k16}OH {\k18}YEAH! {\k6}FOR
+Dialogue: 0,0:00:15.77,0:00:16.45,ViralDefault,,0,0,0,,{\k18}THOSE {\k16}OF {\k16}US {\k18}WHO
+Dialogue: 0,0:00:16.45,0:00:18.03,ViralDefault,,0,0,0,,{\k62}SUCCESSFULLY {\k44}SURVIVED {\k20}THIS {\k32}12
+Dialogue: 0,0:00:18.03,0:00:19.79,ViralDefault,,0,0,0,,{\k32}-HOUR {\k34}POLICE {\k42}CHASE, {\k14}I'M
+Dialogue: 0,0:00:19.79,0:00:21.07,ViralDefault,,0,0,0,,{\k10}LIKE, {\k34}DEAREST, {\k14}WINS {\k18}THE
+Dialogue: 0,0:00:21.07,0:00:22.67,ViralDefault,,0,0,0,,{\k38}$100 {\k80},000 {\k26}FOR {\k16}THEIR
+Dialogue: 0,0:00:22.67,0:00:23.63,ViralDefault,,0,0,0,,{\k26}MOMS. {\k8}WE {\k12}HAD {\k22}FIVE
+Dialogue: 0,0:00:23.63,0:00:25.03,ViralDefault,,0,0,0,,{\k40}SUSPECTS {\k42}BAIL {\k26}OUT. {\k10}THESE
+Dialogue: 0,0:00:25.03,0:00:25.93,ViralDefault,,0,0,0,,{\k20}GUYS {\k20}ARE {\k50}CRAFTY.

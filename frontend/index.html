@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClipEngine | Local OpusClip Alternative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo-area">
+        <div class="logo-icon">⚡</div>
+        <div class="logo-text">
+          <h1>ClipEngine<span class="badge">PRO LOCAL</span></h1>
+          <p>Unrestricted 9:16 Viral Clip Generator</p>
+        </div>
+      </div>
+      <div class="header-tags">
+        <span class="tag-pill">🎯 MediaPipe 9:16 Tracking</span>
+        <span class="tag-pill">🎙️ faster-whisper</span>
+        <span class="tag-pill">🔥 No Watermarks</span>
+      </div>
+    </header>
+
+    <!-- Main Workflow Card -->
+    <main class="workflow-grid">
+      <section class="action-card input-hero">
+        <div class="hero-content">
+          <h2 class="hero-title">Turn Any Long Video Into <span class="gradient-text">Viral Vertical Shorts</span></h2>
+          <p class="hero-desc">Safe for 5-minute to 3-hour videos. Intelligent semantic chunking, active speaker tracking, and dynamic karaoke subtitles rendered in pure 1080x1920.</p>
+          
+          <form id="clipForm" class="url-form">
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              <input type="url" id="youtubeUrl" placeholder="Paste YouTube video or podcast URL here..." required>
+              <button type="submit" id="submitBtn" class="generate-btn">
+                <span>⚡ Find Viral Clips (Jet Speed)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+            <div class="form-options">
+              <label for="clipCount">Clips to Discover:</label>
+              <select id="clipCount">
+                <option value="3" selected>Top 3 Viral Clips</option>
+                <option value="5">Top 5 Viral Clips</option>
+                <option value="8">Top 8 Viral Clips</option>
+              </select>
+              <span class="option-hint">⚡ Discovers highlights in seconds. Click any clip to render & download on demand!</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- Processing Status Card -->
+        <div id="statusContainer" class="status-container hidden">
+          <div class="status-header">
+            <div class="spinner"></div>
+            <div>
+              <h3 id="statusTitle">Analyzing & Extracting Audio...</h3>
+              <p id="statusDesc">Initializing faster-whisper and preparing stream pipeline</p>
+            </div>
+            <span id="percentText" class="percent-badge">0%</span>
+          </div>
+          <div class="progress-track">
+            <div id="progressBar" class="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Results Grid -->
+      <section class="results-section">
+        <div class="section-header">
+          <h2>Generated Viral Highlights</h2>
+          <span id="clipCountLabel" class="counter">0 clips ready</span>
+        </div>
+
+        <div id="clipsGrid" class="clips-grid">
+          <div class="empty-state">
+            <div class="empty-icon">🎬</div>
+            <h3>No clips generated yet</h3>
+            <p>Paste a YouTube link above to start extracting 9:16 vertical clips.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

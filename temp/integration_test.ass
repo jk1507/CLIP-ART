@@ -1,0 +1,17 @@
+[Script Info]
+Title: ClipEngine Dynamic Subtitles
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: ViralDefault,Arial,72,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,2,0,1,6,3,2,60,60,420,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:02.80,ViralDefault,,0,0,0,,{\k60}WELCOME {\k20}TO {\k70}CLIPENGINE {\k20}THE
+Dialogue: 0,0:00:02.80,0:00:04.50,ViralDefault,,0,0,0,,{\k40}LOCAL {\k60}OPUSCLIP {\k70}ALTERNATIVE
